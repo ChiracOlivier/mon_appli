@@ -19,4 +19,14 @@ public class AppTest
         assertTrue( true );
     }
 
+    @Test
+    public  void shouldReturn_the_Sum(){
+        //arrange
+        Integer expected=3;
+        Calculator calculator= new Calculator();
+        //act
+        Integer result= calculator.add(1,2);
+        //assert
+        assertEquals(expected, result);
+    }
 }
