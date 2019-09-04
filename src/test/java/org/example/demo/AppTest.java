@@ -17,7 +17,7 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-        // have to quit
+        // have to remove this one
         assertTrue( true );
     }
 
