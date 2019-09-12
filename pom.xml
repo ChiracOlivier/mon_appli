@@ -10,7 +10,18 @@
 
   <name>mon_appli</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>http://localhost:8080/mon_appl</url>
+    <description> Bien bien bien!!!</description>
+
+  <distributionManagement>
+    <site>
+      <id>site-projet</id>
+      <url>scp://localhost/tmp/</url>
+    </site>
+     <repository>
+       
+     </repository>
+  </distributionManagement>
 
   <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -64,6 +75,9 @@
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
           <version>3.7.1</version>
+          <configuration>
+            <locales>fr</locales>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
@@ -71,5 +85,6 @@
         </plugin>
       </plugins>
     </pluginManagement>
+
   </build>
 </project>
